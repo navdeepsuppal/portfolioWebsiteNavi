@@ -22,7 +22,7 @@ function change(x) {
       elemSelected.className = elemSelected.className.replace(a, b);
       elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
       elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-      image.src = "images\\pic_bulboff.gif";
+      image.src = "images\\pic_bulbon.gif";
   } else if (x.match("resume")) {
       var elemClicked = document.getElementById('menu resume');
       elemClicked.className = elemClicked.className.replace(b, a);
