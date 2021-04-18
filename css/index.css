@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
-
+    margin-top: 20px;
 }
 
 
@@ -12,30 +12,23 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right , #9c27b0, #8ecdff);
+    
 }
 
-
-.nav-links{
-    position: relative;
-    align-items: center;
+.myname{
+    padding: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    animation: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.nav-links a{
-    font-size: 200%;
-}
-
-.logo{
-    flex-basis: 20%;
-}
 
 .logo img{
+    margin-top: 15px;
     width: 20%;
     position: center;
 }
 
-.mySlides{
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+
 
 

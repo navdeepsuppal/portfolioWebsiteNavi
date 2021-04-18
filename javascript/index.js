@@ -6,3 +6,5 @@ function changeImage() {
         image.src = "images\\pic_bulbon.gif";
     }
 }
+
+
