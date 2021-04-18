@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.nav-links a{
+    font-size: 200%;
+}
+
 .logo{
     flex-basis: 20%;
 }
