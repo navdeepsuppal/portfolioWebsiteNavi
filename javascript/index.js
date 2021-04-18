@@ -1,9 +1,9 @@
 function changeImage() {
     var image = document.getElementById('myImage');
     if (image.src.match("bulbon")) {
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     } else {
-        image.src = "images\\pic_bulbon.gif";
+        image.src = "images//pic_bulbon.gif";
     }
 }
 
@@ -22,42 +22,42 @@ function change(x) {
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulbon.gif";
+        image.src = "images//pic_bulbon.gif";
     } else if (x.match("resume")) {
         var elemClicked = document.getElementById('menu resume');
         elemClicked.className = elemClicked.className.replace(b, a);
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     } else if (x.match("contact")) {
         var elemClicked = document.getElementById('menu contact');
         elemClicked.className = elemClicked.className.replace(b, a);
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     } else if (x.match("blog")) {
         var elemClicked = document.getElementById('menu blog');
         elemClicked.className = elemClicked.className.replace(b, a);
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     } else if (x.match("projects")) {
         var elemClicked = document.getElementById('menu projects');
         elemClicked.className = elemClicked.className.replace(b, a);
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     } else if (x.match("videos")) {
         var elemClicked = document.getElementById('menu videos');
         elemClicked.className = elemClicked.className.replace(b, a);
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
-        image.src = "images\\pic_bulboff.gif";
+        image.src = "images//pic_bulboff.gif";
     }
 }
 
