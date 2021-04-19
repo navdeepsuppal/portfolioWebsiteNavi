@@ -47,6 +47,10 @@ body {
     
 }
 
+.ml-3 text-gray-500{
+padding: 0%;
+}
+
 .skills{
     font-size: .8em;
     margin: .2em 0 .6em;
