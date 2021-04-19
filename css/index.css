@@ -101,6 +101,12 @@ padding: 0%;
     text-align: center;
  }
 
+.menu-content-selected {
+    display: default !important;
+}
 
+.menu-content {
+    display: none !important;
+}
 
 
