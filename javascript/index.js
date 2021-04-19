@@ -29,6 +29,8 @@ function change(x) {
         elemSelected.className = elemSelected.className.replace(a, b);
         elemClicked.id = elemClicked.id.replace("menu", "menu-selected");
         elemSelected.id = elemSelected.id.replace("menu-selected", "menu");
+        //window.open('pages//resume.html');
+        loadWholePage('pages//resume.html');
         image.src = "images//pic_bulboff.gif";
     } else if (x.match("contact")) {
         var elemClicked = document.getElementById('menu contact');
@@ -75,3 +77,48 @@ videos
 */
 
 
+function getBody(content) { 
+    test = content.toLowerCase();
+    var x = content.indexOf("<body");
+    if(x == -1) return "";
+    x = content.indexOf(">", x);   
+    if(x == -1) return ""; 
+    var y = content.lastIndexOf("</body>"); 
+    if(y == -1) y = test.lastIndexOf("</html>");
+    if(y == -1) y = content.length;
+    return content.slice(x + 1, y);
+} 
+
+function getContent(content, target) {
+    target.innerHTML =  getBody(content);
+}
+
+function loadWholePage(url) {
+    var y = document.getElementById("storage");
+    var x = document.getElementById("displayed");
+    loadHTML(url, x, y);
+}
+
+function processHTML(temp, target) {
+    target.innerHTML = temp.innerHTML;
+}
+
+function loadHTML(url, storage, param) {
+    var xhr = createXHR();
+    document.write(xhr);
+    xhr.onreadystatechange=function()
+    { 
+        if(xhr.readyState == 4)
+        {
+            //if(xhr.status == 200)
+            {
+                storage.innerHTML = getBody(xhr.responseText);
+                processHTML(storage, param);
+            }
+        } 
+    }; 
+    
+    xhr.open("GET", url , true);
+    xhr.send(null); 
+
+} 
