@@ -1,3 +1,6 @@
+
+#Right Click Disable
+
 window.addEventListener('contextmenu', function (e) {
         e.preventDefault();
   }, false);
@@ -15,3 +18,13 @@ window.addEventListener('contextmenu', function (e) {
   document.addEventListener('contextmenu', event => {
   event.preventDefault();
   })
+
+
+
+
+
+
+
+  #Button
+
+   <button class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
