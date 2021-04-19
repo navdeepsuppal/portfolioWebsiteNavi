@@ -64,6 +64,14 @@ function change(x) {
 }
 
 
+
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+
 /* 
 about me
 resume
