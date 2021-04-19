@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/index.css">
+
+
+  <link rel="stylesheet" href="css/font-awesome.css">
+
   <script src = "\javascript\csi.js"></script>
   <script src = "\javascript\index.js"></script>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -14,14 +18,13 @@
 
 <body>
   
-  
+  <!--
   <a href ="\pages\blog.html">Blog</a> 
   <a href ="\pages\contact.html">Contact</a> 
   <a href ="\pages\resume.html">Resume</a> 
   <a href ="\pages\mylife.html">Mylife</a> 
   <a href ="\pages\projects.html">projects</a> 
-  
-  
+-->
   
   <div class ="main">
     <nav>
@@ -40,54 +43,50 @@
           <mark>AWS, DevOps, Java, Web Development</mark>
         </div>
       </center>
-      
-      
-      
-      
+
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+        <div id= "wrapper" class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
           <div class="flex mx-auto flex-wrap mb-20">
-            <a id = "menu-selected about-me" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-indigo-500 text-indigo-500 tracking-wider rounded-t" onclick="change('about-me')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>about me
+            <ul>
+
+            <li><a id = "menu-selected about-me" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-100 inline-flex items-center leading-none border-indigo-500 text-indigo-500 tracking-wider rounded-t" onclick="change('about-me')">
+              about me
             </a>
+            </li>
+            <li>
             <a id = "menu resume" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('resume')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>resume
+              resume
             </a>
-            <a id = "menu contact" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('contact')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-              </svg>contact
-            </a>
-            <a id = "menu blog" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('blog')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>blog
-            </a>
+          </li>
+          
+          
+          <li>
             <a id = "menu projects" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('projects')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>projects
+              projects
             </a>
+          </li>
+          <li>
             <a id = "menu mylife" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('mylife')">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>myLife
+              myLife
             </a>
+          </li>
+          <li>
+            <a id = "menu contact" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('contact')">
+              contact
+            </a>
+          </li>
+          <li>
+            <a id = "menu blog" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider" onclick="change('blog')">
+              blog
+            </a>
+          </li>
+          </ul>
           </div>
           <div class = "menu-content-selected about-me" id = "menu-content-selected about-me"><div data-include="pages//about me.html"></div></div>
           <div class = "menu-content resume"            id = "menu-content resume"           ><div data-include="pages//resume.html"  ></div></div>
           <div class = "menu-content contact"           id = "menu-content contact"          ><div data-include="pages//contact.html" ></div></div>
           <div class = "menu-content projects"          id = "menu-content projects"         ><div data-include="pages//projects.html"></div></div>
           <div class = "menu-content mylife"            id = "menu-content mylife"           ><div data-include="pages//mylife.html"  ></div></div>
-          <div class = "menu-content mylife"            id = "menu-content blog"           ><div data-include="pages//blog.html"  ></div></div>
         </div>
       </section>
     </nav>
