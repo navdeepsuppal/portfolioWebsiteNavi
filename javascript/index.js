@@ -61,4 +61,4 @@ setInterval(function(){
     } else {
         elem.href = "images//jerry.png";
     }
-}, 1000);
+}, 2000);
